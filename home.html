@@ -26,44 +26,80 @@
 
 </head>
 <body>
-    
-  <!--Início do Header-->
-  <header id="header">
+  
+  <!--Navbar e Hero Section-->
+  <header>
 
-    <!--Início do Navbar-->
-    <nav id="navbar">
+    <!--Navbar-->
+    <nav class="navbar">
 
-      <ul class="navbar-links navbar-links-one">
-        <li class="list-item"><a href="#">Home</a></li>
-        <li class="list-item"><a href="#">Sobre nós</a></li>
-        <li class="list-item"><a href="#">Serviços</a></li>
-      </ul>
-
-      <a href="" class="navbar-brand"><img src="/assets/img/logotipo.png" alt="Meia Banana"></a>
-
-      <ul class="navbar-links navbar-links-two">
-        <li class="list-item"><a href="#">Menu</a></li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+      <!--Sidebar-->
+      <ul class="sidebar">
+        
+        <li onclick=hideSidebar()><a href=""><i class="fi fi-sr-cross"></i></a></li>
+        <li><a href="">Home</a></li>
+        <li><a href="">Sobre Nós</a></li>
+        <li><a href="">Serviços</a></li>
+        <li><a href="">Menu</a></li>
+        <li class="list-item nav-item dropdown">
+          <a class="nav-link dropdown-toggle dropdown-sidebar" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
             Páginas
           </a>
           <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#">Colaboradores</a></li>
+            <li><a class="dropdown-item" href="#">Nossos colaboradores</a></li>
             <li><a class="dropdown-item" href="#">Testemunhos</a></li>
             <li><a class="dropdown-item" href="#">Políticas de privacidade</a></li>
           </ul>
         </li>
-        <li class="list-item"><a href="#">Contactos</a></li>
+        <li><a href="">Reservar </a></li>
+
+      </ul>
+
+      <!--Links-->
+      <ul class="navbar-links navbar-list-one">
+
+        <li class="list-item hideOnMobile"><a href="">Home</a></li>
+        <li class="list-item hideOnMobile"><a href="">Sobre nós</a></li>
+        <li class="list-item hideOnMobile "><a href="">Serviços</a></li>
+
+      </ul>
+
+      <!--Logotipo-->
+      <a href="" class="navbar-brand"><img src="/assets/img/logotipo.png" width="100" height="100" alt=""></a>
+
+      <!--Links-->
+      <ul class="navbar-links navbar-list-two">
+        <li class="list-item hideOnMobile"><a href="">Menu</a></li>
+        <!--Menu dropdown-->
+        <li class="list-item nav-item dropdown hideOnMobile">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Páginas
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Nossos colaboradores</a></li>
+            <li><a class="dropdown-item" href="#">Testemunhos</a></li>
+            <li><a class="dropdown-item" href="#">Políticas de privacidade</a></li>
+          </ul>
+        </li>
+        <li class="list-item hideOnMobile"><a href="">Reservar</a></li>
+        <li onclick=showSideBar() class="menu-burger list-item"><a href="#"><i class="fi fi-sr-menu-burger"></i></a></li>
+        
       </ul>
 
     </nav>
-    <!--Fim do Navbar-->
+    <!--Fim Navbar-->
+
+    <!--Hero Section-->
+
+
 
   </header>
-  <!--Fim do Header-->
 
   <!--Bootstrap-->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+  <!--Scripts-->
+  <script src="/assets/js/controlSideBar.js"></script>
 
 </body>
 </html>

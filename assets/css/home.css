@@ -14,6 +14,7 @@ header {
     overflow: hidden;
     display: flex;
     flex-direction: column;
+    width: 100vw;
 }
 
 header::before {
@@ -26,7 +27,7 @@ header::before {
     background-image: url('/assets/img/hero-background.png');
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center center;
+    background-position: center ;
     background-color: rgba(0, 0, 0, 0.5); /* Ajuste a opacidade aqui */
     background-blend-mode: multiply; /* Combina a cor de fundo com a imagem */
     filter: grayscale(100%); /* Aplica o filtro cinza */
@@ -137,7 +138,7 @@ header::before {
     font-weight: 400;
 }
 
-.hero-cta {
+.cta-negative {
     font-family: 'Montserrat', sans-serif;
     font-weight: bold;
     background-color: white;
@@ -148,7 +149,7 @@ header::before {
     border-color: white;
 }
 
-.hero-cta:hover {
+.cta-negative:hover {
     background-color: transparent;
     color: white;
     border-color: white;
@@ -158,10 +159,12 @@ header::before {
 .quality-card {
     width: 250px;
     height: 250px;
+    color: black !important;
 }
 
 .quality-card i {
     font-size: 65px;
+    color: black;
 }
 
 .card-container {
@@ -183,6 +186,61 @@ header::before {
     font-family: 'Lato', sans-serif;
     font-weight: 400;
     font-size: small;
+}
+
+/* Sobre nós */
+.about-us-title {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 2rem;
+    color: black;
+}
+
+.about-us-caption {
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    font-size: 1.2rem;
+    color: black;
+}
+
+.dif-title {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.dif-caption {
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+}
+
+.dif-number {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 3rem;
+    color: black;
+}
+
+.border-custom {
+    border-color: black !important;
+}
+
+.cta {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 0;
+    cursor: pointer;
+    border-color: white;
+}
+
+.cta:hover {
+    background-color: transparent;
+    color: black;
+    border-color: black;
 }
 
 /* Responsividade: Telemóvel */

@@ -1,9 +1,37 @@
+/* Animações */
+@keyframes rotate { /* Rotacionar */
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+}
+
 /* Header */
 header {
-    background-color: black;
+    position: relative;
+    overflow: hidden;
     display: flex;
     flex-direction: column;
 }
+
+header::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('/assets/img/hero-background.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-color: rgba(0, 0, 0, 0.5); /* Ajuste a opacidade aqui */
+    background-blend-mode: multiply; /* Combina a cor de fundo com a imagem */
+    filter: grayscale(100%); /* Aplica o filtro cinza */
+    z-index: -1; /* Coloca o pseudo-elemento atrás do conteúdo do header */
+  }
 
 /* Navbar */
 .navbar {
@@ -35,7 +63,7 @@ header {
     color: white;
 }
 
-.dropdown-toggle:hover, .dropdown-toggle.show {
+.dropdown-toggle:hover, .dropdown-toggle.show, .dropdown-toggle:focus {
     color: white;
 }
 
@@ -92,6 +120,40 @@ header {
     color: white;
 }
 
+/* Hero Section */
+.hero-img {
+    margin-left: 100px;
+    z-index: 1;
+    animation: rotate 10s linear infinite;
+}
+
+.hero-title {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+}
+
+.hero-caption {
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+}
+
+.hero-cta {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    background-color: white;
+    color: black;
+    padding: 10px 20px;
+    border-radius: 0;
+    cursor: pointer;
+    border-color: white;
+}
+
+.hero-cta:hover {
+    background-color: transparent;
+    color: white;
+    border-color: white;
+}
+
 /* Responsividade: Telemóvel */
 
 @media screen and (max-width: 768px) {
@@ -110,5 +172,9 @@ header {
     /* Sidebar ocupa toda a tela */
     .sidebar {
         width: 100%;
+    }
+    /* Centralizar o hero-img */
+    .hero-img {
+        margin-left: 0;
     }
 }

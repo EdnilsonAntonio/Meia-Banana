@@ -154,6 +154,37 @@ header::before {
     border-color: white;
 }
 
+/* Qualidades */
+.quality-card {
+    width: 250px;
+    height: 250px;
+}
+
+.quality-card i {
+    font-size: 65px;
+}
+
+.card-container {
+    display: flex;
+    justify-content: center;
+}
+
+.card-body {
+    box-shadow: 2px 2px 5px gray;
+}
+
+.card-title {
+    font-family: 'Montserrat', sans-serif;
+    font-weight:600;
+    font-size: medium;
+}
+
+.card-text {
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    font-size: small;
+}
+
 /* Responsividade: Telemóvel */
 
 @media screen and (max-width: 768px) {

@@ -76,49 +76,26 @@ header::before {
     color: black !important;
 }
 
-.sidebar {
-    position: fixed;
-    top: 0;
-    right: 0;
-    height: 100vh;
-    width: 250px;
-    z-index: 999;
-    background-color: white;
-    backdrop-filter: blur(10px);
-    box-shadow: -10px 0 10px rgba(225, 225, 225, 0.2); 
-    display: none;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: flex-start;
+.offcanvas-title {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.side-menu {
     list-style: none;
+    display: flex;
+    flex-direction: column;
     gap: 10px;
-    padding-top: 20px;
-    text-transform: uppercase;
-}
     
-.sidebar li {
-    width: 100%;
 }
 
-.sidebar a {
-    text-decoration: none;
-    color: black;
-}
-
-.dropdown-sidebar {
+.side-menu li a {
     color: black !important;
-}
-
-.menu-burger {
-    display: none;
-}
-
-.menu-burger a {
     text-decoration: none;
 }
 
 .fi-sr-menu-burger {
     color: white;
+    display: none;
 }
 
 /* Hero Section */
@@ -254,13 +231,9 @@ header::before {
     .navbar-brand {
         margin-right: auto;
     }
-    .menu-burger {
+    .fi-sr-menu-burger {
         display: flex;
         margin-right: 30px;
-    }
-    /* Sidebar ocupa toda a tela */
-    .sidebar {
-        width: 100%;
     }
     /* Centralizar o hero-img */
     .hero-img {

@@ -34,27 +34,38 @@
     <!--Navbar-->
     <nav class="navbar">
 
-      <!--Sidebar-->
-      <ul class="sidebar">
-        
-        <li onclick=hideSidebar()><a href=""><i class="fi fi-sr-cross"></i></a></li>
-        <li><a href="">Home</a></li>
-        <li><a href="">Sobre Nós</a></li>
-        <li><a href="">Serviços</a></li>
-        <li><a href="">Menu</a></li>
-        <li class="list-item nav-item dropdown">
-          <a class="nav-link dropdown-toggle dropdown-sidebar" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Páginas
-          </a>
-          <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#">Nossos colaboradores</a></li>
-            <li><a class="dropdown-item" href="#">Testemunhos</a></li>
-            <li><a class="dropdown-item" href="#">Políticas de privacidade</a></li>
-          </ul>
-        </li>
-        <li><a href="">Reservar </a></li>
+      <!--Menu lateral: Versão Mobile-->
+      <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasRightLabel">Menu de navegação</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
 
-      </ul>
+          <!--Sidebar-->
+          <ul class="side-menu">
+            
+            <li><a href="">Home</a></li>
+            <li><a href="">Sobre Nós</a></li>
+            <li><a href="">Serviços</a></li>
+            <li><a href="">Menu</a></li>
+            <li class="list-item nav-item dropdown">
+              <a class="nav-link dropdown-toggle dropdown-sidebar" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Páginas
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Nossos colaboradores</a></li>
+                <li><a class="dropdown-item" href="#">Testemunhos</a></li>
+                <li><a class="dropdown-item" href="#">Políticas de privacidade</a></li>
+              </ul>
+            </li>
+            <li><a href="">Contactos</a></li>
+
+          </ul>
+
+        </div>
+      </div>
+      <!--Fim Menu lateral-->
 
       <!--Links-->
       <ul class="navbar-links navbar-list-one">
@@ -82,8 +93,9 @@
             <li><a class="dropdown-item" href="#">Políticas de privacidade</a></li>
           </ul>
         </li>
-        <li class="list-item hideOnMobile"><a href="">Reservar</a></li>
-        <li onclick=showSideBar() class="menu-burger list-item"><a href="#"><i class="fi fi-sr-menu-burger"></i></a></li>
+        <li class="list-item hideOnMobile"><a href="">Contactos</a></li>
+        <!--Trigger do offcanvas-->
+        <i class="fi fi-sr-menu-burger" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"></i>
         
       </ul>
 
@@ -225,7 +237,7 @@
               <!--Segundo diferencial-->
               <div class="col-sm-6">
                 <div class="d-flex align-items-center border-start border-5 border-custom px-3">
-                  <h1 class="flex-shrink-0 display.5 mb-0 dif-number">+50</h1>
+                  <h1 class="flex-shrink-0 display.5 mb-0 dif-number">+90</h1>
                   <div class="ps-4">
                     <p class="mb-0 dif-caption">Avaliações</p>
                     <h6 class="dif-title mb-0">Excelentes</h6>
@@ -243,6 +255,9 @@
         </div>
       </div>
     </section>
+
+    <!--Menu-->
+    
 
   </main>
 

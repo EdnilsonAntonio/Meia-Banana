@@ -1,3 +1,10 @@
+/* Configurações gerais */
+body {
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0%;
+}
+
 /* Animações */
 @keyframes rotate { /* Rotacionar */
     from {
@@ -220,6 +227,53 @@ header::before {
     border-color: black;
 }
 
+/* Menu */
+.menu-title {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 2rem;
+    color: black;
+}
+
+.category-icon {
+    font-size: 40px;
+}
+
+.category-text small {
+    font-family: 'Lato', sans-serif;
+}
+
+.category-text h6 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+}
+
+.menu-category {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 250px;
+    cursor: pointer;
+}
+
+.product {
+    padding: 0 90px;
+}
+
+.upper-description {
+    color: black;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.lower-description {
+    color: gray;
+    font-family: 'Lato', sans-serif;
+    font-size: 1rem;
+
+}
+
 /* Responsividade: Telemóvel */
 
 @media screen and (max-width: 768px) {
@@ -238,5 +292,22 @@ header::before {
     /* Centralizar o hero-img */
     .hero-img {
         margin-left: 0;
+    }
+
+    .menu-category {
+        flex-direction: column;
+        width: 210px;
+    }
+
+    .category-text {
+        text-align: center;
+    }
+
+    .category-icon {
+        margin-right: 0px !important;
+    }
+
+    .product {
+        padding: 0 20px;
     }
 }

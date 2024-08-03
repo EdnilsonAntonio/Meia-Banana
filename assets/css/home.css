@@ -274,6 +274,54 @@ header::before {
 
 }
 
+/* Reservar */
+.reservation-img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.res-info {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: black;
+}
+
+.res-copy {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.res-copy h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.res-copy p {
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+    width: 80%;
+}
+
+.contact-information {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 1rem;
+    width: 100%;
+}
+
+.contact-information a {
+    color: white;
+    text-decoration: none;
+}
+
+
 /* Responsividade: Telemóvel */
 
 @media screen and (max-width: 768px) {
@@ -296,7 +344,7 @@ header::before {
 
     .menu-category {
         flex-direction: column;
-        width: 210px;
+        width: 150px;
     }
 
     .category-text {
@@ -309,5 +357,9 @@ header::before {
 
     .product {
         padding: 0 20px;
+    }
+
+    .res-copy p {
+        width: 100%;
     }
 }

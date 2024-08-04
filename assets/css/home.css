@@ -321,6 +321,26 @@ header::before {
     text-decoration: none;
 }
 
+/* Colaboradores */
+.section-title {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 2rem;
+    margin-bottom: 50px;
+    color: black;
+    text-align: center;
+}
+
+.col-name {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.col-designation {
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+}
 
 /* Responsividade: Telemóvel */
 
@@ -341,7 +361,7 @@ header::before {
     .hero-img {
         margin-left: 0;
     }
-
+    
     .menu-category {
         flex-direction: column;
         width: 150px;

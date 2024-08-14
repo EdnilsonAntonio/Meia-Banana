@@ -5,6 +5,14 @@ body {
     padding: 0%;
 }
 
+/* Títulos das secções */
+.section-title {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 2rem;
+    color: black;
+}
+
 /* Animações */
 @keyframes rotate { /* Rotacionar */
     from {
@@ -173,12 +181,6 @@ header::before {
 }
 
 /* Sobre nós */
-.about-us-title {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: bold;
-    font-size: 2rem;
-    color: black;
-}
 
 .about-us-caption {
     font-family: 'Lato', sans-serif;
@@ -275,6 +277,9 @@ header::before {
 }
 
 /* Reservar */
+.reservation .section-title {
+    color: white !important;
+}
 .reservation-img {
     width: 100%;
     object-fit: cover;
@@ -341,6 +346,62 @@ header::before {
     font-family: 'Lato', sans-serif;
     font-weight: 400;
 }
+
+/* Rodapé */
+footer {
+    background-color: black;
+    color: white;
+}
+
+footer ul {
+    list-style: none;
+    padding-left: 0;
+    font-family: 'Lato', sans-serif;
+}
+
+footer li a {
+    text-decoration: none;
+    color: white;
+}
+
+.social {
+    margin-top: 10px;
+    list-style: none;
+    display: flex;
+    justify-content: flex-start;
+    gap: 30px;
+}
+
+.social a {
+    text-decoration: none;
+    color: white
+}
+
+form {
+    height: 50px;
+    position: relative;
+    width: fit-content;
+}
+
+form input {
+    width: 300px;
+    height: 50px;
+    padding: 10px;
+}
+
+form .cta {
+    position: absolute;
+    right: 7px;
+    top: 12px;
+    font-size: smaller;
+}
+
+.copy-quote {
+    text-decoration: none;
+    color: white;
+    font-family: 'Lato', sans-serif;
+}
+
 
 /* Responsividade: Telemóvel */
 

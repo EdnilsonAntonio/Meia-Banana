@@ -13,7 +13,57 @@ body {
     color: black;
 }
 
-/* Animações */
+/** Transições **/
+/* De cima para baixo */
+.reveal {
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: all 1.5s ease;
+}
+
+.reveal.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+/* Da esquerda para a direita */
+.reveal-left {
+    position: relative;
+    transform: translateX(-150px);
+    opacity: 0;
+    transition: all 2s ease;
+}
+
+.reveal-left.active-left {
+    opacity: 1;
+    transform: translateX(0);
+}
+/* Da direita para a esquerda */
+.reveal-right {
+    position: relative;
+    transform: translateX(150px);
+    opacity: 0;
+    transition: all 2s ease;
+}
+
+.reveal-right.active-right {
+    opacity: 1;
+    transform: translateX(0);
+}
+/* Transição fixa da esquerda para a direita */
+.reveal-left-fixed {
+    position: relative;
+    transform: translateX(-150px);
+    opacity: 0;
+    transition: all 2s ease;
+}
+
+.reveal-left-fixed.active-left-fixed {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+/** Animações **/
 @keyframes rotate { /* Rotacionar */
     from {
       transform: rotate(0deg);
@@ -62,16 +112,16 @@ header::before {
     list-style: none;
     margin: 0;
     padding: 0;
-    gap: 50px;
+    gap: 3.125rem;
     text-transform: uppercase;
 }
 
 .navbar-list-one {
-    margin-left: 60px;
+    margin-left: 3.75rem;
 }
 
 .navbar-list-two {
-    margin-right: 60px;
+    margin-right: 3.75rem;
 }
 
 .list-item a {
@@ -99,7 +149,7 @@ header::before {
     list-style: none;
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 0.625rem;
     
 }
 
@@ -115,7 +165,7 @@ header::before {
 
 /* Hero Section */
 .hero-img {
-    margin-left: 100px;
+    margin-left: 6.25rem;
     z-index: 1;
     animation: rotate 10s linear infinite;
 }
@@ -135,7 +185,7 @@ header::before {
     font-weight: bold;
     background-color: white;
     color: black;
-    padding: 10px 20px;
+    padding: 0.625rem 1.25rem;
     border-radius: 0;
     cursor: pointer;
     border-color: white;
@@ -149,13 +199,13 @@ header::before {
 
 /* Qualidades */
 .quality-card {
-    width: 250px;
-    height: 250px;
+    width: 15.625rem;
+    height: 15.625rem;
     color: black !important;
 }
 
 .quality-card i {
-    font-size: 65px;
+    font-size: 4.063rem;
     color: black;
 }
 
@@ -165,7 +215,7 @@ header::before {
 }
 
 .card-body {
-    box-shadow: 2px 2px 5px gray;
+    box-shadow: 0.125rem 0.125rem 0.313rem gray;
 }
 
 .card-title {
@@ -217,7 +267,7 @@ header::before {
     font-weight: bold;
     background-color: black;
     color: white;
-    padding: 10px 20px;
+    padding: 0.625rem 1.25rem;
     border-radius: 0;
     cursor: pointer;
     border-color: white;
@@ -238,7 +288,7 @@ header::before {
 }
 
 .category-icon {
-    font-size: 40px;
+    font-size: 2.5rem;
 }
 
 .category-text small {
@@ -254,12 +304,11 @@ header::before {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 250px;
-    cursor: pointer;
+    width: 15.625rem;
 }
 
 .product {
-    padding: 0 90px;
+    padding: 0 5.625rem;
 }
 
 .upper-description {
@@ -298,7 +347,7 @@ header::before {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    gap: 50px;
+    gap: 3.125rem;
 }
 
 .res-copy h3 {
@@ -331,7 +380,7 @@ header::before {
     font-family: 'Montserrat', sans-serif;
     font-weight: bold;
     font-size: 2rem;
-    margin-bottom: 50px;
+    margin-bottom: 3.125rem;
     color: black;
     text-align: center;
 }
@@ -351,6 +400,7 @@ header::before {
 footer {
     background-color: black;
     color: white;
+    width: 100vw;
 }
 
 footer ul {
@@ -365,11 +415,11 @@ footer li a {
 }
 
 .social {
-    margin-top: 10px;
+    margin-top: 0.625rem;
     list-style: none;
     display: flex;
     justify-content: flex-start;
-    gap: 30px;
+    gap: 1.875rem;
 }
 
 .social a {
@@ -378,21 +428,21 @@ footer li a {
 }
 
 form {
-    height: 50px;
+    height: 3.125rem;
     position: relative;
     width: fit-content;
 }
 
 form input {
-    width: 300px;
-    height: 50px;
-    padding: 10px;
+    width: 18.75rem;
+    height: 3.125rem;
+    padding: 0.625rem;
 }
 
 form .cta {
     position: absolute;
-    right: 7px;
-    top: 12px;
+    right: 0.438rem;
+    top: 0.75rem;
     font-size: smaller;
 }
 
@@ -400,6 +450,20 @@ form .cta {
     text-decoration: none;
     color: white;
     font-family: 'Lato', sans-serif;
+}
+
+/* Botão flutuante */
+#topBtn {
+    position: fixed;
+    visibility: hidden;
+    right: 3.5rem;
+    bottom: 3.5rem;
+    text-decoration: none;
+}
+
+#topBtn:hover {
+    background-color: white;
+    color: black;
 }
 
 
@@ -416,7 +480,7 @@ form .cta {
     }
     .fi-sr-menu-burger {
         display: flex;
-        margin-right: 30px;
+        margin-right: 1.875rem;
     }
     /* Centralizar o hero-img */
     .hero-img {
@@ -425,7 +489,7 @@ form .cta {
     
     .menu-category {
         flex-direction: column;
-        width: 150px;
+        width: 9.375rem;
     }
 
     .category-text {
@@ -437,10 +501,53 @@ form .cta {
     }
 
     .product {
-        padding: 0 20px;
+        padding: 0 1.25rem;
     }
 
     .res-copy p {
         width: 100%;
     }
+}
+
+/* Responsividade: Tablet */
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    /* Esconder itens */
+    .hideOnMobile {
+        display: none;
+    }
+    /* Logotipo mais a esquerda */
+    .navbar-brand {
+        margin-right: auto;
+    }
+    .fi-sr-menu-burger {
+        display: flex;
+        margin-right: 1.875rem;
+    }
+    /* Centralizar o hero-img */
+    .hero-img {
+        margin-left: 0;
+    }
+    /* Categorias do Menu */
+    .menu-category {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 9.375rem;
+    }
+
+    .menu-category i {
+        margin-right: 0px !important;
+    }
+
+    .category-text {
+        text-align: center;
+    }
+    /* Imagem da secção de reserva */
+    .reservation-img {
+        width: 100%;
+        object-fit: cover;
+        height: 33.55rem;
+    }
+
 }

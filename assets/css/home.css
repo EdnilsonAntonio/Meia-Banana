@@ -396,6 +396,93 @@ header::before {
     font-weight: 400;
 }
 
+/* Testemunhos */
+.carousel-inner {
+    overflow: hidden;
+    transition: transform 0.5s ease-in-out;
+    margin-top: 3.125rem;
+    width: 70%;
+    height: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0.125rem 0.125rem 0.313rem gray;
+}
+
+.carousel-item {
+    background-color: white !important;
+    width: 100%;
+    height: 100%;
+    padding: 40px;
+    
+    
+}
+
+.feedback {
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+
+}
+
+.client {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.client-pic {
+   height: 56px;
+   width: 56px;
+}
+
+.client-img {
+    height: 56px;
+    object-fit: cover;
+}
+
+.client-info h5 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+}
+
+.carousel-item i {
+    font-size: 3rem;
+    color: black;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: #333; /* Muda a cor de fundo do ícone */
+    border-radius: 50%; /* Deixa o ícone redondo */
+    width: 50px; /* Define a largura do ícone */
+    height: 50px; /* Define a altura do ícone */
+    background-size: 50%; /* Ajusta o tamanho do ícone dentro do círculo */
+}
+
+.carousel-indicators button {
+    display: inline-block;
+    box-sizing: border-box;
+    width: 10px !important; /* Largura interna do indicador */
+    height: 10px !important; /* Altura interna do indicador */
+    border-radius: 50% !important; /* Forma circular */
+    background-color: transparent; /* Torna o fundo transparente */
+    border: 2px solid black !important; /* Borda preta para todos os indicadores */
+    
+}
+
+.carousel-indicators .active {
+    background-color: gray; 
+}
+
+.carousel-indicators {
+    bottom: -60px; /* Ajusta a posição vertical dos indicadores */
+    padding-left: 0; /* Removendo padding que pode interferir */
+    margin-left: auto; 
+    margin-right: auto; 
+    
+}
+
+
 /* Rodapé */
 footer {
     background-color: black;
@@ -506,6 +593,10 @@ form .cta {
 
     .res-copy p {
         width: 100%;
+    }
+    /* Testemunho */
+    .carousel-inner {
+        height: 450px;
     }
 }
 

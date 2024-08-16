@@ -422,10 +422,83 @@
       </div>
     </section>
 
+    <!--Testemunhos-->
+    <section class="testimonials py-5 reveal-left">
+      <h1 class="section-title text-center">Testemunhos</h1>
+      <div id="carouselExampleIndicators" class="carousel slide">
+        <!--Indicadores-->
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <!--Fim indicadores-->
+
+        <!--Contéudo interno do carrossel-->
+        <div class="carousel-inner">
+          <!--Testemunho 1-->
+          <div class="carousel-item active">
+            <i class="fi fi-ss-quote-right"></i>
+            <p class="feedback">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vero eveniet, minus sunt fugiat ad sit, facilis rem debitis quidem reiciendis dicta omnis consequatur sapiente consectetur nulla ab vitae saepe aspernatur?</p>
+            <div class="client">
+              <div class="client-pic">
+                <img src="/assets/img/testimonials/R.jpeg" class="img-fluid rounded-circle client-img" alt="...">
+              </div>
+              <div class="client-info">
+                <h5>Paulo Jacinto</h5>
+                <small>Cliente do Meia Banana</small>
+              </div>
+            </div>
+          </div>
+          <!--Testemunho 2-->
+          <div class="carousel-item">
+            <i class="fi fi-ss-quote-right"></i>
+            <p class="feedback">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vero eveniet, minus sunt fugiat ad sit, facilis rem debitis quidem reiciendis dicta omnis consequatur sapiente consectetur nulla ab vitae saepe aspernatur?</p>
+            <div class="client">
+              <div class="client-pic">
+                <img src="/assets/img/testimonials/R.jpeg" class="img-fluid rounded-circle client-img" alt="...">
+              </div>
+              <div class="client-info">
+                <h5>António Silva</h5>
+                <small>Cliente do Meia Banana</small>
+              </div>
+            </div>
+          </div>
+          <!--Testmunho 3-->
+          <div class="carousel-item">
+            <i class="fi fi-ss-quote-right"></i>
+            <p class="feedback">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vero eveniet, minus sunt fugiat ad sit, facilis rem debitis quidem reiciendis dicta omnis consequatur sapiente consectetur nulla ab vitae saepe aspernatur?</p>
+            <div class="client">
+              <div class="client-pic">
+                <img src="/assets/img/testimonials/R.jpeg" class="img-fluid rounded-circle client-img" alt="...">
+              </div>
+              <div class="client-info">
+                <h5>Josemar Gongo</h5>
+                <small>Cliente do Meia Banana</small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--Fim conteúdo interno do carrossel-->
+
+        <!--Botão de controlo Prev-->
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <!--Botão de controlo Next-->
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    
+    </section>
+
   </main>
 
   <!--Rodapé-->
-  <footer class="py-3 reveal">
+  <footer class="py-3 mt-5 reveal">
     <!--Links-->
     <div class="container">
       <div class="row g-5 py-5">
@@ -486,10 +559,9 @@
   </footer>
 
   <!--Botão flutuante-->
-  <a class="cta" id="topBtn" onclick="scrollBody(), irParaTopo()" title="Para o topo"><i
-    class=
-    "fi fi-ss-up"
-    ></i></a>
+  <a class="cta" id="topBtn" onclick="scrollBody(), irParaTopo()" title="Para o topo">
+    <i class="fi fi-ss-up"></i>
+  </a>
 
   <!--Bootstrap-->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>

@@ -17,7 +17,7 @@ body {
 /* De cima para baixo */
 .reveal {
     position: relative;
-    transform: translateY(150px);
+    transform: translateY(9.375rem);
     opacity: 0;
     transition: all 1.5s ease;
 }
@@ -29,7 +29,7 @@ body {
 /* Da esquerda para a direita */
 .reveal-left {
     position: relative;
-    transform: translateX(-150px);
+    transform: translateX(-9.375rem);
     opacity: 0;
     transition: all 2s ease;
 }
@@ -41,7 +41,7 @@ body {
 /* Da direita para a esquerda */
 .reveal-right {
     position: relative;
-    transform: translateX(150px);
+    transform: translateX(9.375rem);
     opacity: 0;
     transition: all 2s ease;
 }
@@ -53,7 +53,7 @@ body {
 /* Transição fixa da esquerda para a direita */
 .reveal-left-fixed {
     position: relative;
-    transform: translateX(-150px);
+    transform: translateX(-9.375rem);
     opacity: 0;
     transition: all 2s ease;
 }
@@ -402,7 +402,7 @@ header::before {
     transition: transform 0.5s ease-in-out;
     margin-top: 3.125rem;
     width: 70%;
-    height: 300px;
+    height: 18.75rem;
     margin-left: auto;
     margin-right: auto;
     box-shadow: 0.125rem 0.125rem 0.313rem gray;
@@ -412,7 +412,7 @@ header::before {
     background-color: white !important;
     width: 100%;
     height: 100%;
-    padding: 40px;
+    padding: 2.5rem;
     
     
 }
@@ -426,17 +426,17 @@ header::before {
 
 .client {
     display: flex;
-    gap: 20px;
+    gap: 1.25rem;
     align-items: center;
 }
 
 .client-pic {
-   height: 56px;
-   width: 56px;
+   height: 3.5rem;
+   width: 3.5rem;
 }
 
 .client-img {
-    height: 56px;
+    height: 3.5rem;
     object-fit: cover;
 }
 
@@ -454,19 +454,19 @@ header::before {
 .carousel-control-next-icon {
     background-color: #333; /* Muda a cor de fundo do ícone */
     border-radius: 50%; /* Deixa o ícone redondo */
-    width: 50px; /* Define a largura do ícone */
-    height: 50px; /* Define a altura do ícone */
+    width: 3.125rem; /* Define a largura do ícone */
+    height: 3.125rem; /* Define a altura do ícone */
     background-size: 50%; /* Ajusta o tamanho do ícone dentro do círculo */
 }
 
 .carousel-indicators button {
     display: inline-block;
     box-sizing: border-box;
-    width: 10px !important; /* Largura interna do indicador */
-    height: 10px !important; /* Altura interna do indicador */
+    width: 0.625rem !important; /* Largura interna do indicador */
+    height: 0.625rem !important; /* Altura interna do indicador */
     border-radius: 50% !important; /* Forma circular */
     background-color: transparent; /* Torna o fundo transparente */
-    border: 2px solid black !important; /* Borda preta para todos os indicadores */
+    border: 0.125rem solid black !important; /* Borda preta para todos os indicadores */
     
 }
 
@@ -475,7 +475,7 @@ header::before {
 }
 
 .carousel-indicators {
-    bottom: -60px; /* Ajusta a posição vertical dos indicadores */
+    bottom: -3.75rem; /* Ajusta a posição vertical dos indicadores */
     padding-left: 0; /* Removendo padding que pode interferir */
     margin-left: auto; 
     margin-right: auto; 
@@ -596,7 +596,7 @@ form .cta {
     }
     /* Testemunho */
     .carousel-inner {
-        height: 450px;
+        height: 28.125rem;
     }
 }
 

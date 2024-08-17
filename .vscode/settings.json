@@ -1,5 +1,5 @@
 {
-    "cSpell.language": "en,pt,pt-PT",
+    "cSpell.language": "en,pt,pt-PT,lorem",
     "liveServer.settings.port": 5502,
     "workbench.colorCustomizations": {
         "activityBar.activeBackground": "#2f7c47",
@@ -20,5 +20,8 @@
         "titleBar.inactiveBackground": "#21573299",
         "titleBar.inactiveForeground": "#e7e7e799"
     },
-    "peacock.color": "#215732"
+    "peacock.color": "#215732",
+    "cSpell.words": [
+        "Josemar"
+    ]
 }

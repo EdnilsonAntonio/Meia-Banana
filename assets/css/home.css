@@ -95,6 +95,7 @@ header::before {
     background-position: center ;
     background-color: rgba(0, 0, 0, 0.5); /* Ajuste a opacidade aqui */
     background-blend-mode: multiply; /* Combina a cor de fundo com a imagem */
+    background-attachment: fixed; /* Torna o background estático */
     filter: grayscale(100%); /* Aplica o filtro cinza */
     z-index: -1; /* Coloca o pseudo-elemento atrás do conteúdo do header */
   }
@@ -526,11 +527,19 @@ form input {
     padding: 0.625rem;
 }
 
+form input::placeholder {
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+}
+
 form .cta {
-    position: absolute;
-    right: 0.438rem;
-    top: 0.75rem;
-    font-size: smaller;
+    margin-top: 10px;
+    font-size: small;
+}
+
+form .cta:hover {
+    background-color: white;
+    color: black;
 }
 
 .copy-quote {
